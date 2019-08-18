@@ -86,6 +86,7 @@
 }
 
 .about-title {
+	margin: 0;
 	color: #445161;
 	font-size: 30px;
 	font-weight: 400;
@@ -93,7 +94,7 @@
 }
 
 .about-left-wrapper p {
-	margin:0 0 20px 0;
+	margin:20px 0 0 0;
 	color: #333333;
 	font-size: 16px;
 	font-weight: 400;
@@ -104,7 +105,60 @@
 	float: right;
 	width: 430px;
 	height: 245px;
-	background-color: #445162;
+	background-color: #445161;
 }
 
+.dignity {
+	width: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+	background-color: #f5f5f5;
+}
 
+.dignity::after {
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.dignity-title {
+	margin: 0;
+	text-align: center;
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;	
+}
+
+.dignity-list {
+	width: 100%;
+	margin: 0;
+	list-style-type: none;
+}
+
+.dignity-list-item {
+	width: 530px;
+	padding: 29px 64px 5px 0;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	position: relative;
+	float: left;
+}
+
+.dignity-list-item:nth-child(even) {
+	padding: 29px 0px 5px 0;
+}
+
+.dignity-list-item::before {
+	content: "";
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 34px;
+	left: -40px;
+	background-image: url(../img/plus-icon.png);
+}
