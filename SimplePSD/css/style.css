@@ -32,7 +32,9 @@
 }
 
 .main-header-list {
-	margin: 50px 0 0 0;
+	margin: 40px 0 0 0;
+	padding: 0 0 0 36px;
+	list-style-type: none;
 }
 
 .main-header-list-item {
@@ -42,6 +44,18 @@
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 36px;
+	position: relative;
+}
+
+.main-header-list-item::before {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 19px;
+	position: absolute;
+	top: 8px;
+	left: -35px;
+	background-image: url(../img/check-icon.png);
 }
 
 .main-header-photo {
