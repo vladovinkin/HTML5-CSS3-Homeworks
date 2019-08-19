@@ -1,0 +1,52 @@
+body {
+	position: relative;	
+}
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    width: 130px;
+    height: 200px;
+    border: 1px solid black;
+	position: absolute;
+	border-radius: 10px;
+}
+
+.one {
+	background-image: url('../img/Jo.png');
+}
+
+.two {
+    top: 50px;
+    left: 50px;
+	background-image: url('../img/A.png');
+}
+
+.three {
+    top: 100px;
+    left: 100px;
+	background-image: url('../img/K.png');
+}
+
+.four {
+    top: 150px;
+    left: 150px;
+	background-image: url('../img/7.png');
+}
+
+.five {
+    top: 200px;
+    left: 200px;
+	background-image: url('../img/3.png');
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover {
+    z-index: 10;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5); /* немного добавил "от себя" - так оно выглядит точно сверху :) */
+}
