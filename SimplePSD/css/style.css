@@ -210,7 +210,7 @@
 
 .reviews {
 	width: 100%;
-	padding: 50px;
+	padding: 50px 50px 26px 50px;
 	box-sizing: border-box;
 	background-color: #f5f5f5;
 }
@@ -228,6 +228,61 @@
 	font-weight: 400;
 	line-height: 36px;
 	text-align: center;
+}
+
+.review-item {
+	display: inline-block;
+	float: left;
+	margin: 0 32px 24px 0;
+}
+
+.review-item:nth-child(odd) {
+	margin-right: 0;
+}
+
+.review-figure {
+	margin: 0;
+	float: left;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: #445161;
+}
+
+.review-quote {
+	background-color: #ebebeb;
+	width: 436px;
+	border-radius: 10px;
+	float: right;
+	padding: 16px 20px 16px 11px;
+	margin-left: 24px;
+	position: relative;
+}
+
+.review-quote::before {
+	content: "";
+	border: 16px solid transparent;
+	border-right: 16px solid #ebebeb;
+	position: absolute;
+	left: -30px;
+	top: 25px;
+}
+
+.review-text {
+	margin: 0 0 12px 0;
+	display: inline-block;
+	color: #333333;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	font-style: italic;
+}
+
+.review-author {
+	color: #989898;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
 }
 
 .buy {
