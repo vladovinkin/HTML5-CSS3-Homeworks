@@ -290,6 +290,9 @@
 	width: 100%;
 	padding: 50px;
 	box-sizing: border-box;
+	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
 }
 
 .buy::after {
@@ -300,11 +303,92 @@
 }
 
 .buy-title {
+	margin: 0;
+	width: 100%;
 	color: #445161;
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 36px;
 	text-align: center;
+}
+
+.buy-plan {
+	width: 300px;
+	border-radius: 10px;
+	align-self: flex-end;
+	margin-right: 45px;
+	background-color: #445162;
+	color: #fff;
+}
+
+.buy-plan:nth-last-child() {
+	margin: 0;
+}
+
+.buy-plan-title {
+	margin: 0;
+	padding: 16px 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.buy-plan-price {
+	display: block;
+	background-color: #fff;
+	border: 2px solid #445162;
+	color: #445162;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.buy-plan-list {
+	margin: 0;
+	padding: 19px 20px 0px 20px;
+	list-style-position: inside;
+}
+
+.buy-plan-list-item {
+	margin: 0;
+	line-height: 1.7em;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.buy-button {
+	margin: 20px;
+	display: block;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-top: 11px;
+	width: 256px;
+	height: 25px;
+	background-color: #fff;
+	color: #445161;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+}
+
+.buy-button:hover::after {
+	content: " <";
+}
+
+.buy-button:hover::before {
+	content: "> ";
+}
+
+.buy-button:active {
+	background-color: #445161;
+	color: #fff;
+	border: 2px solid #fff;
 }
 
 .contacts {
