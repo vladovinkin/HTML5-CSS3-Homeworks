@@ -530,17 +530,46 @@
 
 .contacts-set-social-list {
 	list-style-type: none;
-	margin-left: 30px;
+	margin-left: 20px;
+	vertical-align: bottom;
 }
 
 .contacts-set-social-list-item {
 	float: left;
+	margin-left: 8px;
+}
+
+.social-twitter,
+.social-facebook,
+.social-linkedin,
+.social-google,
+.social-youtube {
 	display: block;
-	width: 42px;
-	height: 42px;
+	width: 36px;
+	height: 27px;
 	border-radius: 50%;
 	background-color: #fff;
-	margin-right: 8px;
+	color: #445162;
+	text-align: center;
+	padding-top: 9px;
+	border: 3px solid #445162;
+}
+
+.social-twitter:hover,
+.social-facebook:hover,
+.social-linkedin:hover,
+.social-google:hover,
+.social-youtube:hover {
+	border: 3px solid #fff;
+}
+
+.social-twitter:active,
+.social-facebook:active,
+.social-linkedin:active,
+.social-google:active,
+.social-youtube:active {
+	height: 25px;
+	padding-top: 11px;
 }
 
 .footer-text {
