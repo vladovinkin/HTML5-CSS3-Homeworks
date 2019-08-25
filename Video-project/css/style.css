@@ -1,0 +1,57 @@
+body {
+	overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+	color: white;
+}
+
+.video {
+	display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+nav {
+	position: relative;
+}
+
+.article {
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    z-index: 1;
+    text-align: center;
+    font-size: 24px;
+}
+
+.article-title {
+    font-size: 3em;
+    margin: 0 0 20px 0;
+}
+
+.article-txt {
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
