@@ -321,7 +321,7 @@
 	color: #fff;
 }
 
-.buy-plan:nth-last-child() {
+.buy-plan:nth-last-child(1) {
 	margin: 0;
 }
 
