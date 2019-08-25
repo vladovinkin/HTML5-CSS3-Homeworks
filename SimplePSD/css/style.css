@@ -194,7 +194,8 @@
 	padding: 0 15px 0 0;
 }
 
-.screenshot-caption {
+.screenshot-header {
+	margin: 0;
 	color: #445161;
 	font-size: 24px;
 	font-weight: 400;
