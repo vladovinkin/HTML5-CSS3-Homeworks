@@ -1,7 +1,6 @@
 .container {
 	width: 1280px;
 	margin: 0 auto;
-	border: 1 px solid black;
 	font-family: "Arial";
 	box-shadow: 0 0 6px rgba(0,0,0,0.5);
 }
@@ -393,7 +392,6 @@
 .buy-button:active {
 	background-color: #445161;
 	color: #fff;
-	border: 2px solid #fff;
 }
 
 .footer {
