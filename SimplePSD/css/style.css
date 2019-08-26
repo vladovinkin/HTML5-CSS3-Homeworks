@@ -194,7 +194,8 @@
 
 .screenshot-image {
 	float: left;
-	padding: 0 15px 0 0;
+	margin: 0 15px 0 0;
+	box-shadow: 1px 1px 4px #445161;
 }
 
 .screenshot-header {
@@ -252,6 +253,23 @@
 	height: 75px;
 	border-radius: 50%;
 	background-color: #445161;
+	box-shadow: 2px 2px 6px #445161;
+}
+
+.review-fig1 {
+	background: url(../img/image-review-photo-1.jpg);
+}
+
+.review-fig2 {
+	background: url(../img/image-review-photo-2.jpg);
+}
+
+.review-fig3 {
+	background: url(../img/image-review-photo-3.jpg);
+}
+
+.review-fig4 {
+	background: url(../img/image-review-photo-4.jpg);
 }
 
 .review-quote {
