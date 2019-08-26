@@ -7,7 +7,7 @@
 
 .main-header {
 	width: 100%;
-	padding: 50px;
+	padding: 50px 50px 75px 50px;
 	box-sizing: border-box;
 	background: url(../img/bg-inf-header-add.png), url(../img/bg-inf-header.jpg);
 	background-position: bottom left -5px, 0;
@@ -218,7 +218,7 @@
 
 .reviews {
 	width: 100%;
-	padding: 50px 50px 26px 50px;
+	padding: 50px 50px 75px 50px;
 	box-sizing: border-box;
 	background: url(../img/bg-inf-header-add.png), url(../img/bg-inf-section.jpg);
 	background-position: bottom left -5px, 0;
