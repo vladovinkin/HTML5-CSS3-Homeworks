@@ -116,6 +116,7 @@
 	padding: 50px;
 	box-sizing: border-box;
 	background: url(../img/bg-inf-section.jpg) #f5f5f5;
+	background-attachment: fixed;
 }
 
 .dignity-title {
@@ -142,6 +143,7 @@
 
 .dignity-list-title {
 	outline: 0;
+	display: block;
 	position: relative;
 	color: #333333;
 	font-size: 16px;
@@ -164,7 +166,7 @@
 	left: -41px;
 }
 
-details[open] .dignity-list-title::before {
+details[open] > .dignity-list-title::before {
 	background: url("../img/icon-minus.png");
 }
 
@@ -361,6 +363,7 @@ details[open] .dignity-list-title::before {
 	align-self: flex-end;
 	margin-right: 45px;
 	background: url(../img/bg-inf-header.jpg) #445162;
+	background-attachment: fixed;
 	color: #fff;
 }
 
