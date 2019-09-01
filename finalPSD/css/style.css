@@ -62,10 +62,6 @@
 	align-items: center;
 }
 
-.main-menu {
-	
-}
-
 .block-main-menu {
 	padding: 0;
 	list-style: none;
@@ -73,8 +69,6 @@
 	min-width: 637px;
 	justify-content: space-between
 }
-
-.main-menu-item {}
 
 .main-menu-link {
 	text-decoration: none;
@@ -137,9 +131,15 @@
 
 .carousel {}
 
-.block-carousel {}
+.block-carousel {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
 
-.carousel-button-prev {}
+.carousel-button-prev {
+	margin: 380px 0 0 0;
+}
 
 .block-carousel-headers-description {}
 
@@ -151,7 +151,31 @@
 
 .carousel-button-get-started {}
 
-.carousel-button-next {}
+.carousel-button-next {
+	margin: 380px 0 0 0;
+}
+
+.carousel-button-prev-img,
+.carousel-button-next-img {
+	fill: #fff;
+	opacity: .5;
+}
+
+.carousel-button-prev:hover .carousel-button-prev-img {
+	opacity: 1;
+}
+
+.carousel-button-prev:active .carousel-button-prev-img {
+	opacity: .7;
+}
+
+.carousel-button-next:hover .carousel-button-next-img {
+	opacity: 1;
+}
+
+.carousel-button-next:active .carousel-button-next-img {
+	opacity: .7;
+}
 
 .pagination {}
 
