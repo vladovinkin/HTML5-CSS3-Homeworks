@@ -17,6 +17,9 @@
 
 .header-up {
 	display: flex;
+	justify-content: space-between;
+	padding: 0 225px;
+	align-content: center;
 }
 
 .logo-main-link {
@@ -55,23 +58,82 @@
 }
 
 .block-menu-buttons {
+	display: flex;
+	align-items: center;
+}
+
+.main-menu {
 	
 }
 
-.main-menu {}
-
 .block-main-menu {
+	padding: 0;
 	list-style: none;
 	display: flex;
+	min-width: 637px;
+	justify-content: space-between
 }
 
 .main-menu-item {}
 
-.main-menu-link {}
+.main-menu-link {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'montserrat-light';
+	font-size: 14px;
+}
 
-.button-basket {}
+.main-menu-link:hover {
+	color: #dcc;	
+}
 
-.button-search {}
+.main-menu-link:active {
+	color: #fff;	
+}
+
+.button-basket {
+	padding: 0;
+	margin:0 0 0 63px;
+	width: 18px;
+	height: 24px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.button-basket-icon {
+	fill: #fff;
+}
+
+.button-basket:hover .button-basket-icon {
+	fill: #dcc;
+}
+
+.button-basket:active .button-basket-icon {
+	fill: #fff;
+}
+
+.button-search {
+	padding: 0;
+	margin: 0 0 0 28px;
+	width: 24px;
+	height: 24px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.button-search-icon {
+	fill: #fff;
+}
+
+.button-search:hover .button-search-icon {
+	fill: #dcc;
+}
+
+.button-search:active .button-search-icon {
+	fill: #fff;
+}
 
 .carousel {}
 
