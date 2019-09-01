@@ -141,15 +141,60 @@
 	margin: 380px 0 0 0;
 }
 
-.block-carousel-headers-description {}
+.block-carousel-headers-description {
+	margin: 285px 0 0 0;
+	text-align: center;
+	color: #fff;
+}
 
-.carousel-subheader {}
+.carousel-subheader {
+	margin: 0 0 14px 0;
+	font-family: 'raleway-medium', sans-serif;
+	font-size: 36px;
+}
 
-.carousel-header {}
+.carousel-header {
+	margin: 0 0 19px 0;
+	font-family: 'raleway-extrabold', sans-serif;
+	font-size: 52px;
+}
 
-.carousel-description {}
+.carousel-text {
+	margin: 0;
+	width: 570px;
+	font-family: 'montserrat-light', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
 
-.carousel-button-get-started {}
+.carousel-button-get-started {
+	display: block;
+	padding: 21px 0;
+	margin: 50px auto 0;
+	width: 170px;
+	box-shadow: inset 0 -3px 0 #736357;
+	border-radius: 3px;
+	background-color: #998675;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.carousel-button-get-started:hover {
+	background-color: #877;
+}
+
+.carousel-button-get-started:active {
+	background-color: #dcc;
+	box-shadow: inset 0 -3px 0 #baa;
+	color: #998675;
+}
+
+.carousel-button-get-started-text {
+	font-family: "raleway-extrabold", sans-serif;
+	font-size: 14px;
+	line-height: 23px;
+	text-transform: uppercase;
+}
 
 .carousel-button-next {
 	margin: 380px 0 0 0;
