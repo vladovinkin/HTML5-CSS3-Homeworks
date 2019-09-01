@@ -8,9 +8,143 @@
 .main-header {
 	width: 100%;
 	height: 1024px;
+	padding: 40px 150px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background: url('../img/header-bg.jpg');
-	background-repeat: no-repeat;
 }
+
+.header-up {
+	display: flex;
+}
+
+.logo-main-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 181px;
+}
+
+.logo-image {
+	fill: #fff;
+}
+
+.logo-txt {
+	color: #fff;
+	font-family: "raleway-regular", sans-serif;
+	font-size: 34px;
+	letter-spacing: -1.36px;
+}
+
+.logo-main-link:hover .logo-image {
+	fill: #dcc;
+}
+
+.logo-main-link:hover .logo-txt {
+	color: #dcc;
+}
+
+.logo-main-link:active .logo-image {
+	fill: #fff;
+}
+
+.logo-main-link:active .logo-txt {
+	color: #fff;
+}
+
+.block-menu-buttons {
+	
+}
+
+.main-menu {}
+
+.block-main-menu {
+	list-style: none;
+	display: flex;
+}
+
+.main-menu-item {}
+
+.main-menu-link {}
+
+.button-basket {}
+
+.button-search {}
+
+.carousel {}
+
+.block-carousel {}
+
+.carousel-button-prev {}
+
+.block-carousel-headers-description {}
+
+.carousel-subheader {}
+
+.carousel-header {}
+
+.carousel-description {}
+
+.carousel-button-get-started {}
+
+.carousel-button-next {}
+
+.pagination {}
+
+.pagination-link {}
+
+.content {}
+
+.activities {}
+
+.activity {}
+
+.activity-icon {}
+
+.activity-header {}
+
+.activity-text {}
+
+.realisation {}
+
+.realisation-header {}
+
+.realisation-text {}
+
+.block-realisation-screenshots {}
+
+.purchase {}
+
+.block-purchase-center {}
+
+.block-purchase-text {}
+
+.purchase-header {}
+
+.purchase-header-recolour {}
+
+.purchase-text {}
+
+.purchase-button {}
+
+.purchase-button-text {}
+
+.latest {}
+
+.presentation {}
+
+.excellent-for {}
+
+.achievements {}
+
+.recent {}
+
+.customers {}
+
+.main-footer {}
+
+.about-short {}
+
+.copyright {}
