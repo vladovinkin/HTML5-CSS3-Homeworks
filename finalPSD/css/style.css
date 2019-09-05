@@ -371,7 +371,6 @@
 }
 
 .activities {
-	width: 100%;
 	text-align: center;
 	margin: 0;
 	padding: 80px 360px;
@@ -384,6 +383,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	box-sizing: border-box;
 }
 
 .activity-icon {
@@ -404,6 +404,7 @@
 	color: #8c8c8c;
 	font-size: 14px;
 	line-height: 24px;
+	width: 100%;
 }
 
 .activity-underline {
@@ -430,16 +431,60 @@
 
 .realisation {
 	background-color: #fbfaf8;
-	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 83px 345px 0;
+	text-align: center;
+	align-items: center;
 }
 
 .realisation-header {
-	
+	margin: 0 0 24px 0;
+	color: #555555;
+	font-family: "raleway-semibold";
+	font-size: 30px;
 }
 
-.realisation-text {}
+.realisation-text {
+	margin: 0 0 40px 0;
+	width: 758px;
+	color: #8c8c8c;
+	font-size: 16px;
+	line-height: 28px;
+}
 
-.block-realisation-screenshots {}
+.block-realisation-screenshots {
+	width: 1230px;
+	height: 482px;
+	margin: 0;
+	position: relative;
+}
+
+.realisation-screenshot1 {
+	position: absolute;
+	left: 230px;
+	z-index: 3;
+}
+
+.realisation-screenshot2 {
+	position: absolute;
+	top: 82px;
+	left: 0px;
+	z-index: 2;
+}
+
+.realisation-screenshot3 {
+	position: absolute;
+	top: 82px;
+	left: 460px;
+	z-index: 1;
+}
+
+.realisation-screenshot1:hover,
+.realisation-screenshot2:hover,
+.realisation-screenshot3:hover {
+	z-index:3;
+}
 
 .purchase {}
 
