@@ -380,22 +380,25 @@
 
 .activity-block {
 	width: 267px;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	box-sizing: border-box;
 }
 
-.activity {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	box-sizing: border-box;
+.activity-block:after {
+	content: "";
+	display: inline-flex;
+	width: 70px;
+	height: 3px;
+	background-color: #f1eee9;
+	align-self: center;
 }
 
 .activity-icon {
 	display: block;
-	margin: 0 0 29px 0;
+	margin: 0 auto 29px;
 	min-height: 49px;
 	fill: #555;
 }
@@ -408,16 +411,11 @@
 }
 
 .activity-text {
+	display: block;
 	margin: 0 0 30px 0;
 	color: #8c8c8c;
 	font-size: 14px;
 	line-height: 24px;
-}
-
-.activity-underline {
-	width: 70px;
-	height: 3px;
-	background-color: #f1eee9;
 }
 
 .activity-block:hover {
@@ -432,7 +430,7 @@
 	color: #c7b299;
 }
 
-.activity-block:hover .activity-underline {
+.activity-block:hover:after {
 	background-color: #c7b299;
 }
 
