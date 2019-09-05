@@ -233,17 +233,14 @@
 	background: none;
 	cursor: pointer;
 	outline: none;
+	background-image: url(../img/icon-search.svg);
 }
 
-.button-search-icon {
-	
+.button-search:hover {
+	background-image: url(../img/icon-search-hover.svg);
 }
 
-.button-search:hover .button-search-icon {
-	
-}
-
-.button-search:active .button-search-icon {
+.button-search:active {
 	
 }
 
@@ -293,6 +290,7 @@
 	background-color: #998675;
 	text-decoration: none;
 	color: #ffffff;
+	outline: none;
 }
 
 .carousel-button-get-started:hover {
@@ -539,6 +537,7 @@
 	text-decoration: none;
 	text-align: center;
 	color: #ffffff;
+	outline: none;
 }
 
 .purchase-button:hover {
