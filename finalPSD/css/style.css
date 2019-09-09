@@ -640,7 +640,6 @@
 .latest-projects-item {
 	width: 370px;
 	margin: 15px;
-	background-color: #fbfaf8;
 }
 
 .latest-projects-figure {
@@ -650,10 +649,22 @@
 	flex-direction: column;
 	width: 100%;
 	min-height: 337px;
+	background-color: #fbfaf8;
+	position: relative;
 }
 
 .latest-projects-image {
 	margin: 0;
+}
+
+.latest-projects-image-effect {
+	background-color: #111;
+	width: 370px;
+	height: 237px;
+	position: absolute;
+	filter: opacity(70%);
+	z-index: 20;
+	display: none;
 }
 
 .latest-projects-title {
@@ -673,6 +684,21 @@
 	text-align: left;
 }
 
+.latest-projects-figure:hover {
+	background-color: #362f2d;
+}
+
+.latest-projects-figure:hover .latest-projects-image-effect {
+	display: block;
+}
+
+.latest-projects-figure:hover .latest-projects-title {
+	color: #fff;
+}
+
+.latest-projects-figure:hover .latest-projects-txt {
+	color: #c7b299;
+}
 
 .presentation {
 	width: 100%;
