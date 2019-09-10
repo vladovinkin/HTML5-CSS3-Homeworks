@@ -657,6 +657,44 @@
 	position: relative;
 }
 
+.latest-projects-btn-link,
+.latest-projects-btn-lupa {
+	display: none;
+	position: absolute;
+	top: 106px;
+	width: 26px;
+	height: 26px;
+	border: none;
+	background-repeat: no-repeat;
+}
+
+.latest-projects-btn-link {
+	background-image: url(../img/icon-link.svg);	
+	left: 144px;
+}
+
+.latest-projects-btn-link:hover {
+	background-image: url(../img/icon-link-hover.svg);	
+}
+
+
+.latest-projects-btn-link:active {
+	background-image: url(../img/icon-link.svg);	
+}
+
+.latest-projects-btn-lupa {
+	background-image: url(../img/icon-lupa.svg);	
+	left: 198px;
+}
+
+.latest-projects-btn-lupa:hover {
+	background-image: url(../img/icon-lupa-hover.svg);	
+}
+
+.latest-projects-btn-lupa:active {
+	background-image: url(../img/icon-lupa.svg);	
+}
+
 .latest-projects-image {
 	margin: 0;
 }
@@ -715,6 +753,11 @@
 
 .latest-projects-figure:hover .latest-projects-txt-block::before {
 	border-bottom: 10px solid #362f2d;
+}
+
+.latest-projects-figure:hover .latest-projects-btn-link,
+.latest-projects-figure:hover .latest-projects-btn-lupa {
+	display: block;
 }
 
 .latest-projects-button {
