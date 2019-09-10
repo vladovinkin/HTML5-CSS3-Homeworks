@@ -658,12 +658,33 @@
 }
 
 .latest-projects-image-effect {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+/* .latest-projects-image-effect {
 	background-color: #111;
 	width: 370px;
 	height: 237px;
 	position: absolute;
+	top: 0;
+	left: 0;
 	filter: opacity(70%);
 	display: none;
+}
+ */
+.latest-projects-txt-block {
+}
+
+.latest-projects-txt-block::before {
+	content: "";
+	position: absolute;
+	border: 15px solid transparent;
+	border-bottom: 10px solid #fbfaf8;
+	top: 212px;
+	left: 19px;
 }
 
 .latest-projects-title {
@@ -697,6 +718,10 @@
 
 .latest-projects-figure:hover .latest-projects-txt {
 	color: #c7b299;
+}
+
+.latest-projects-figure:hover .latest-projects-txt-block::before {
+	border-bottom: 10px solid #362f2d;
 }
 
 .latest-projects-button {
