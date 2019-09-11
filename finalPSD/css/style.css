@@ -871,6 +871,64 @@
 
 .excellent-for {
 	padding: 80px 390px 0 423px;
+	display: flex;
+	align-content: flex-end;
+}
+
+.excellent-for-image {
+	display: flex;
+	width: 423px;
+	height: 616px;
+	align-self: flex-end;
+}
+
+.excellent-for-block-right {
+	display: flex;
+	width: 657px;
+	flex-direction: column;
+	align-self: flex-end;
+	padding: 0 0 183px 29px;
+}
+
+.excellent-for-title {
+	margin: 0 0 40px 0;
+	color: #555555;
+	font-family: "raleway-semibold", sans-serif;
+	font-size: 30px;
+}
+
+.excellent-for-txt {
+	margin: 0 0 45px 0;
+	color: #8c8c8c;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: justify;
+}
+
+.excellent-for-list {
+	list-style: none;
+	padding: 0 0 0 100px;
+	margin: 0;
+}
+.excellent-for-item {
+	margin: 0;
+	color: #8c8c8c;
+	font-size: 16px;
+	line-height: 32px;
+	position: relative;
+}
+
+.excellent-for-item:before {
+	content: "";
+	display: block;
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 5px;
+	left: -50px;
+	background-color: #fff;
+	background-image: url(../img/list-icon.svg);
+	background-repeat: no-repeat;
 }
 
 .achievements {
