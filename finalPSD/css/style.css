@@ -936,6 +936,75 @@
 	background-image: -webkit-linear-gradient(left, #211b19 0%, #4e3427 100%);
 	background-image: -o-linear-gradient(left, #211b19 0%, #4e3427 100%);
 	background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+	display: flex;
+	justify-content: space-between;
+}
+
+.achievements-block-1,
+.achievements-block-2,
+.achievements-block-3,
+.achievements-block-4,
+.achievements-block-5 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 100px;
+	min-height: 96px;
+	padding: 74px 0 0 0;
+	margin: 0;
+}
+
+.achievements-block-1 {
+	background-image: url(../img/icon-clients.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.achievements-block-2 {
+	background-image: url(../img/icon-coffee.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.achievements-block-3 {
+	background-image: url(../img/icon-posts.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.achievements-block-4 {
+	background-image: url(../img/icon-likes.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.achievements-block-5 {
+	background-image: url(../img/icon-launched.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.achievements-block-number {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	font-family: 'montserrat-extralight', sans-serif;
+	font-size: 48px;
+	line-height: 40px;
+}
+
+.achievements-block-txt {
+	margin: 0;
+	padding: 20px 0 30px;
+	color: #c7b299;
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+
+.achievements-block-line {
+	width: 30px;
+	height: 0px;
+	display: block;
+	background-color: #fff;
+	margin: 0;
+	padding: 1px 0;
 }
 
 .recent {
