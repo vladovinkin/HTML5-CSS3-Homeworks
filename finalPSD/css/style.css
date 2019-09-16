@@ -1154,10 +1154,16 @@
 }
 
 .customers {
-	padding: 140px 405px;
+	padding: 140px 405px 139px;
+	margin: 0;
 	background: url(../img/footer-bg.jpg);
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
+}
+
+.customers-link {
+	display: flex;
 }
 
 .main-footer {}
