@@ -1331,4 +1331,55 @@
 .copyright {
 	padding: 45px 375px 52px;
 	background-color: #111111;
+	display: flex;
+	justify-content: space-between;
+	color: #555555;
+	font-size: 13px;
+}
+
+.copyright-this-link {
+	text-decoration: none;
+	color: #555555;
+}
+
+.copyright-this-company-name {
+	color: #959595;
+}
+
+.copyright-this-link:hover {
+	color: #c7b299;
+}
+
+.copyright-this-link:hover .copyright-this-company-name {
+	color: #fff;
+}
+
+.copyright-this-list,
+.copyright-from-list {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.copyright-from-link {
+	text-decoration: none;
+	color: #959595;
+}
+
+.copyright-from-link:hover {
+	color: #c7b299;
+}
+
+.copyright-this-list-item:nth-child(n)::after,
+.copyright-from-list-item:nth-child(n)::after {
+	content: "|";
+	color: #252525;
+	padding: 0 14px;
+}
+
+.copyright-this-list-item:nth-last-child(1)::after,
+.copyright-from-list-item:nth-last-child(1)::after{
+	content: "";
+	padding: 0;
 }
