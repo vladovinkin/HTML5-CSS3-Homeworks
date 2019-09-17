@@ -202,15 +202,17 @@
 }
 
 .button-basket {
-	padding: 0;
+	padding: 0 52px 0 0;
 	margin: 0 0 0 63px;
 	width: 18px;
 	height: 24px;
 	border: none;
-	background: none;
 	cursor: pointer;
 	outline: none;
+	background-color: transparent;
 	background-image: url(../img/icon-cart.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .button-basket > span {
@@ -227,34 +229,47 @@
 	background-image: url(../img/icon-cart.svg);
 }
 
-.button-search {
+.main-menu-form {
+	display: block;
+	height: 24px;
 	padding: 0;
-	margin: 0 0 0 28px;
+	margin: 0;
+	position: relative;
+}
+
+.main-menu-search-input {
+	padding: 0;
 	width: 24px;
 	height: 24px;
 	border: none;
-	background: none;
 	cursor: pointer;
 	outline: none;
+	background-color: transparent;
 	background-image: url(../img/icon-search.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	position: absolute;
+	top: 2px;
+	left: 120px;
+	padding-right: 24px;
+	color: #fff;
+	text-shadow: 2px 2px 2px black;
+	transition: width 1s ease;
 }
 
-.button-search > span {
-	position: relative;
-	top: 0;
-	left: 0;
+.main-menu-search-input:focus {
+	background-image: url(../img/icon-search-hover.svg);
+	width: 250px;
+	transition: width 1s ease;
 }
 
-.button-search:hover {
+.main-menu-search-input:hover {
 	background-image: url(../img/icon-search-hover.svg);
 }
 
 .button-search:active {
 	background-image: url(../img/icon-search.svg);
-}
-
-.carousel {
-	
 }
 
 .block-carousel {
