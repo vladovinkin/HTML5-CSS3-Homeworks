@@ -733,10 +733,7 @@
 	display: none;
 }
 
-.latest-projects-txt-block {
-}
-
-.latest-projects-txt-block::before {
+.latest-projects-triangle::before {
 	content: "";
 	position: absolute;
 	border: 15px solid transparent;
@@ -778,7 +775,7 @@
 	color: #c7b299;
 }
 
-.latest-projects-figure:hover .latest-projects-txt-block::before {
+.latest-projects-figure:hover .latest-projects-triangle::before {
 	border-bottom: 10px solid #362f2d;
 }
 
