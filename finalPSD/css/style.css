@@ -118,12 +118,13 @@
 	flex-direction: column;
 	justify-content: space-between;
 	width: 100%;
-	height: 1024px;
+	min-height: 1024px;
 	padding: 40px 150px 40px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	background: url('../img/header-bg.jpg');
+	background-image: url('../img/header-bg.jpg');
+	background-repeat: no-repeat;
 }
 
 .header-up {
@@ -408,7 +409,6 @@
 	width: 267px;
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 	justify-content: space-between;
 	box-sizing: border-box;
 }
@@ -978,30 +978,29 @@
 	margin: 0;
 }
 
-.achievements-block-1 {
-	background-image: url(../img/icon-clients.svg);
+.achievements-block-1,
+.achievements-block-2,
+.achievements-block-3,
+.achievements-block-4,
+.achievements-block-5 {
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+
+.achievements-block-1 {
+	background-image: url(../img/icon-clients.svg);
 }
 .achievements-block-2 {
 	background-image: url(../img/icon-coffee.svg);
-	background-repeat: no-repeat;
-	background-position: center top;
 }
 .achievements-block-3 {
 	background-image: url(../img/icon-posts.svg);
-	background-repeat: no-repeat;
-	background-position: center top;
 }
 .achievements-block-4 {
 	background-image: url(../img/icon-likes.svg);
-	background-repeat: no-repeat;
-	background-position: center top;
 }
 .achievements-block-5 {
 	background-image: url(../img/icon-launched.svg);
-	background-repeat: no-repeat;
-	background-position: center top;
 }
 
 .achievements-block-number {
