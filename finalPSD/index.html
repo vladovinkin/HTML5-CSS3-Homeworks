@@ -18,8 +18,13 @@
 				</svg>
 				<span class="logo-txt">Waxom</span></a>
 			<div class="block-menu-buttons">
+			
+				<label class="burger-button" for="menu-open"></label>
+				<input type="checkbox" class="menu-open-checkbox" id="menu-open"/>
+				
 				<nav class="main-menu">
-					<ul class="block-main-menu">
+					<ul id="main-menu" class="block-main-menu">
+<!--						<label class="menu-open-button" for="menu-open"></label>-->
 						<li class="main-menu-item"><a href="#" class="main-menu-link" title="Home page">Home</a></li>
 						<li class="main-menu-item"><a href="#" class="main-menu-link" title="About us page">About Us</a></li>
 						<li class="main-menu-item"><a href="#" class="main-menu-link" title="Portfolio page">Portfolio</a></li>
@@ -124,6 +129,11 @@
 				<div class="realisation-screenshot1"><img class="realisation-image-1" src="img/browser-center.jpg" width="770" height="482" alt="realization1"></div>
 				<div class="realisation-screenshot2"><img class="realisation-image-2" src="img/browser-left.jpg" width="770" height="400" alt="realization2"></div>
 				<div class="realisation-screenshot3"><img class="realisation-image-3" src="img/browser-right.jpg" width="770" height="400" alt="realization3"></div>
+			</div>
+			<div class="block-realisation-screenshots-mobile">
+				<img class="realisation-image-1" src="img/browser-center.jpg" width="385" height="241" alt="realization1">
+				<img class="realisation-image-2" src="img/browser-left.jpg" width="385" height="200" alt="realization2">
+				<img class="realisation-image-3" src="img/browser-right.jpg" width="385" height="200" alt="realization3">
 			</div>
 		</section>
 		<aside class="purchase">
@@ -237,6 +247,12 @@
 				src="video/presentation-video.mp4" 
 				poster="img/video-preview.jpg">
 			</video>
+			<video id="presentation-video-id-mobile"
+				class="presentation-video-mobile"
+				width="100%"
+				src="video/presentation-video.mp4" 
+				poster="img/video-preview.jpg">
+			</video>
  			<div class="presentation-block-over-video">
 				<svg class="presentation-btn-start" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
 					<circle r="50" cx="50" cy="50" fill="#000" opacity=".2" />
@@ -250,11 +266,16 @@
 					crossorigin="anonymous">
 				</script>
 				<script>
-					var video = document.querySelector("#presentation-video-id"),
-			    		button = document.querySelector(".presentation-btn-start");
+					let video = document.querySelector("#presentation-video-id");
+					let video_mobile = document.querySelector("#presentation-video-id-mobile");
+			    	let	button = document.querySelector(".presentation-btn-start");
 						button.addEventListener("click", function() {
 						  video.play();
 						  video.setAttribute("controls","controls");
+						}, false);
+						button.addEventListener("click", function() {
+						  video_mobile.play();
+						  video_mobile.setAttribute("controls","controls");
 						}, false);
 						$(".presentation-btn-start").click(function() {
 						  $(".presentation-block-over-video").addClass('presentation-block-over-video--hide');
