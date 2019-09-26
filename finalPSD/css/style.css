@@ -181,7 +181,6 @@
 .menu-open-checkbox {
 	width: 20px;
 	height: 20px;
-	border: 1px solid red;
 }
 
 .burger-button, 
@@ -199,11 +198,10 @@
 	list-style: none;
 	display: flex;
 	min-width: 637px;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .main-menu-link {
-	display: block;
 	text-decoration: none;
 	color: #fff;
 	font-family: 'montserrat-light';
@@ -1578,8 +1576,10 @@
 	}
 
 	.header-up {
-		padding: 20px;
-		justify-content: center;
+		padding: 20px 40px;
+		justify-content: space-between;
+		flex-direction: row;
+		display: flex;
 	}
 
 	.burger-button {
@@ -1590,42 +1590,77 @@
 		background-size: 100%;
 	}
 	
-	.block-main-menu {
-		visibility: hidden;
-		margin: 0 auto;
-		height: auto;
-		width: 100%;
-		flex-direction: column;
-	}
-	
-	.main-menu-item {
-		height: 40px;
-		outline: 1px solid white;
-		text-align: center;
-		background-color: #ccc;
-		margin-top: 2px;
-	}
-
 	.main-menu {
+		visibility: hidden;
 		position: fixed;
 		min-width: 100%;
+		height: 100%;
 		top: 96px;
-		background-color: #362f2d;
 		left: 0;
-/* 		display: none;*/
-		visibility: hidden;
+		left: 0;
+		z-index: 50;
+	}
+	
+	.block-main-menu {
+		margin: 0 auto;
+/*		height: 100%;*/
+		min-width: unset;
+		width: 100%;
+		flex-direction: column;
+		z-index: 100;
+	}
+	
+	.menu-open-checkbox:checked ~ .main-menu>.block-main-menu {
+		visibility: visible;
+		display: fixed;
+		color: #000;
+		background-color: #888;
+	}
+	
+	.menu-open-checkbox:checked ~ .main-menu {
+		visibility: visible;
+		background-color: rgba(255,255,255,.3);
 	}
 	
 	.main-menu-item {
-		background-color: #fff;
+		outline: 1px solid white;
+		outline-offset: -1px;
+		width: 100%;
+		color: green;
+		margin-top: 2px;
+		display: flex;
 	}
 	
-	.button-basket {
+	.main-menu-link {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		padding: 20px 0;
+		background-color: #362f2d;
+		font-family: "montserrat-regular", sans-serif;
+		font-size: 16px;
+	}
+	
+	.main-menu-item:hover {
+		outline: 1px solid #362f2d;
+	}
+	
+	.main-menu-item:hover .main-menu-link {
+		background-color: #fff;
+		color: #362f2d;
+	}
+	
+	.block-menu-buttons > .main-menu-form {
 		display: none;
 	}
 
 	.main-menu-search-input {
 		position: relative;
+		top: 14px;
+		left: 16px;
+		padding: 0;
+		margin: 0;
+		transform: scale(2);
 	}
 
 	.activities {
@@ -1744,7 +1779,7 @@
 	}
 	
 	.presentation {
-		height:fit-content;
+		height: auto;
 		outline: none;
 	}
 
