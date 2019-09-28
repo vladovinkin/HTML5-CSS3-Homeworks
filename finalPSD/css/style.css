@@ -134,6 +134,10 @@
 	align-content: center;
 }
 
+.header-up > .main-menu-form {
+	display: none;
+}
+
 .logo-main-link {
 	display: flex;
 	justify-content: center;
@@ -253,7 +257,7 @@
 }
 
 .main-menu-search-input {
-	padding: 0;
+	padding: 0 24px 0 0;
 	width: 24px;
 	height: 24px;
 	border: none;
@@ -267,7 +271,6 @@
 	position: absolute;
 	top: 2px;
 	left: 120px;
-	padding-right: 24px;
 	color: #fff;
 	text-shadow: 2px 2px 2px black;
 	transition: width 1s ease;
@@ -1582,6 +1585,10 @@
 		display: flex;
 	}
 
+	.header-up > .main-menu-form {
+		display: block;
+	}
+	
 	.burger-button {
 		display: block;
     	width: 50px;
@@ -1608,6 +1615,10 @@
 		width: 100%;
 		flex-direction: column;
 		z-index: 100;
+	}
+	
+	.menu-open-checkbox:checked + .burger-button {
+		background-color: aliceblue;
 	}
 	
 	.menu-open-checkbox:checked ~ .main-menu>.block-main-menu {
@@ -1654,6 +1665,10 @@
 		display: none;
 	}
 
+	.main-menu-form {
+		outline: none;
+	}
+	
 	.main-menu-search-input {
 		position: relative;
 		top: 14px;
@@ -1661,8 +1676,32 @@
 		padding: 0;
 		margin: 0;
 		transform: scale(2);
+		transform-origin: left;
+		transition: none;
 	}
 
+	.main-menu-search-input::placeholder {
+		color: transparent;
+	}
+	
+	.main-menu-search-input:focus {
+		width: 150px;
+		transition: width 0.8s ease;
+		transform-origin: left;
+	}
+	
+	.main-menu-search-input:focus::placeholder {
+		color: #766;
+	}
+	
+	.main-menu-form:focus-within + .logo-main-link {
+		display: none;
+	}
+	
+	.main-menu-form:focus-within ~ .block-menu-buttons {
+		margin: 2px 0;
+	}
+	
 	.activities {
 		padding: 0;
 		margin: 0;
@@ -1705,7 +1744,6 @@
 		padding: 3px;
 		box-shadow: 2px 2px 6px #665f5d;
 	}
-	
 	
 	.purchase {
 		padding: 5%;
