@@ -1592,6 +1592,7 @@
 	}
 	
 	#burger-icon {
+		display: block;
 		width: 50px;
 		height: 42px;
 		position: relative;
@@ -1658,7 +1659,7 @@
 		-moz-transform: rotate(45deg);
 		-o-transform: rotate(45deg);
 		transform: rotate(45deg);
-		top: 4;
+		top: 4px;
 		left: 8px;
 	}
 
@@ -1702,7 +1703,7 @@
 	
 	.menu-open-checkbox:checked ~ .main-menu>.block-main-menu {
 		visibility: visible;
-		display: fixed;
+		position: fixed;
 		color: #000;
 		background-color: #888;
 	}
